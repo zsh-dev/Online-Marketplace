@@ -1,0 +1,40 @@
+.breadcrumbs {
+    margin-bottom: 30px;
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        position: relative;
+        margin-right: 13px;
+        padding-right: 15px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background-image: url(../icons/arrow-next.svg);
+            width: 6px;
+            height: 9px;
+        }
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+            
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__link {
+        color: #000;
+        
+    }
+}

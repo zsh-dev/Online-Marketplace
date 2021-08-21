@@ -1,0 +1,38 @@
+.products {
+    &__title {
+        margin-bottom: 44px;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    &__slider-btn {
+        position: absolute;
+        top: 35%;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: center center no-repeat;
+        background-color: #FFFFFF;
+        border: 1px solid #CDCDCD;
+        z-index: 2;
+        cursor: pointer;
+        transition: opacity .3s;
+        &_prev {
+            left: -10px;
+            background-image: url(../icons/arrow-prev.svg);
+        }
+        &_next {
+            right: -10px;
+            background-image: url(../icons/arrow-next.svg);
+        }
+    }
+    .swiper-button-disabled {
+        opacity: 0;
+    }
+}

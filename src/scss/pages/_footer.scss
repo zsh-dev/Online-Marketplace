@@ -1,0 +1,47 @@
+.footer {
+    padding: 25px 0 22px;
+    background-color: #FAFAFA;
+
+    &__inner {
+        display: flex;
+        margin-bottom: 27px;
+    }
+
+    &__item {
+        flex-basis: 25%;
+    }
+
+    &__title {
+        font-family: Montserrat, sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 35px;
+    }
+
+    &__list-item {
+        margin-bottom: 25px;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        transition: color .5s;
+        &:hover {
+            color: #282A91;
+        }
+    }
+
+    &__contact {
+        color: #000000;
+        margin-bottom: 25px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  
+    &__copyright {
+        text-align: center;
+    }
+}

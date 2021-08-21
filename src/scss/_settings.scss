@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.link {
+    color: inherit;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      
+    }
+  
+}
+.page-section {
+    padding-bottom: 35px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s;
+    z-index: 2;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.lock {
+    overflow: hidden;
+}

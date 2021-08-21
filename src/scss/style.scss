@@ -1,0 +1,29 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/minireset.min';
+@import 'libs/swiper-bundle.min';
+@import 'libs/choices.min';
+
+
+
+
+
+@import 'settings';
+@import 'components';
+
+@import 'pages/header';
+
+@import 'pages/index/banner';
+@import 'pages/index/products';
+@import 'pages/index/sellers';
+@import 'pages/index/subscribe';
+
+@import 'pages/breadcrumbs';
+
+@import 'pages/catalog/catalog';
+@import 'pages/product-page/product';
+
+
+@import 'pages/footer';
+
+@import 'media';

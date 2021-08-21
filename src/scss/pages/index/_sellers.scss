@@ -1,0 +1,35 @@
+.sellers {
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        flex-basis: 25%;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover  a {
+            color: #282A91;
+        }
+    }
+
+    &__img {
+        margin-bottom: 18px;
+    }
+
+    &__count {
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000000;
+        transition: color .5s;
+    }
+}

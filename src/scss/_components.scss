@@ -1,0 +1,243 @@
+.title {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 40px;
+    color: #000000;
+
+    &_white {
+        color: #fff;
+    }
+}
+
+.btn {
+    background-color: #282A91;
+    height: 55px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover {
+        background-color: #4a63dc;
+    }
+
+    &_cart {
+        padding: 0;
+        width: 43px;
+        height: 43px;
+        background-image: url(../icons/cart-white.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &_big {
+        padding: 0 15px;
+        min-width: 225px;
+    }
+
+    &_blue {
+        background-color: #A8FAE3;
+
+
+        color: #000000;
+        &:hover {
+           background-color: #a8fabd; 
+        }
+    }
+}
+
+.btn-close {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #282a91;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &_discount .discount {
+        display: inline-block;
+    }
+
+
+
+    &__header {
+        flex: 1 0 auto;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        position: relative;
+        background-color: #FCFCFC;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 8px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 15px;
+
+        img {
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        transition: color .5s;
+
+        &:hover {
+            color: #282A91;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        margin-right: 45px;
+
+        &-compare,
+        &-favorite {
+            background-color: transparent;
+            border: none;
+            margin: 0 11px;
+            cursor: pointer;
+        }
+    }
+
+    &__price {
+        margin-left: auto;
+        margin-right: 4px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    &__price-old {
+        align-self: flex-end;
+        display: inline-block;
+        text-decoration-line: line-through;
+
+        color: #8E8E8E;
+
+    }
+
+    &__text {
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+
+
+}
+
+.card-list {
+    flex-direction: row;
+
+    .card__img {
+        flex: 0 0 280px;
+        margin-right: 40px;
+
+    }
+
+    .mb {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.product-status {
+    font-family: Montserrat, sans-serif;
+
+    font-weight: 600;
+
+    color: #36C868;
+
+    &_not {
+        color: #f50000;
+    }
+}
+
+.discount {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px 18px;
+    background-color: #A8FAE3;
+    border-radius: 0px 15px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.link-more {
+    margin-top: 65px;
+    text-align: right;
+
+    a {
+        position: relative;
+        padding-right: 14px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #000000;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            right: 0;
+            background-image: url(../icons/arrow-next.svg);
+            width: 6px;
+            height: 9px;
+        }
+
+    }
+}
+
+.burger {
+    display: none;
+    width: 46px;
+    height: 46px;
+    background: url(../icons/burger.svg) center center no-repeat;
+    background-color: #282A91;
+    border-radius: 5px;
+    border: none;
+}
