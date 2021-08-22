@@ -47,10 +47,21 @@
     }
 }
 
-.catalog-list {
+.catalog {
+   
+    &__list {
+        &.grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 70px 80px;
+        }
+    }
     &__list-item {
         &:not(:last-child) {
             margin-bottom: 45px;
+        }
+        &.card-grid {
+            margin-bottom: 0;
         }
 
     }
