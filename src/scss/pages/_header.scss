@@ -281,13 +281,13 @@
     position: absolute;
     top: 80px;
     left: -150%;
-    bottom: 0;
+    height: 100%;
     width: 100%;
     padding: 15px 0;
    background-color: #fff;
     z-index: 10;
     transition: left .5s;
-    overflow-y: auto;
+    overflow: auto;
     &.active {
         left: 0;
     }
