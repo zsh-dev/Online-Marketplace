@@ -112,7 +112,10 @@
     }
 
     .header {
+      
         &__nav-panel {
+            position: relative;
+            z-index: 11;
             .header__menu {
                 display: none;
             }
@@ -129,6 +132,7 @@
 
         &__mobile-panel {
             display: block;
+           
         }
     }
 
