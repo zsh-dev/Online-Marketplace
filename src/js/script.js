@@ -140,47 +140,61 @@ if (filterClose) {
 
 
 
-const burger = document.querySelector('.burger'),
+const btnBurger = document.querySelector('.burger'),
+  btnCloseMenu = document.querySelector('.btn-close'),
   mobileHeader = document.querySelector('.header__mobile-panel');
-if (burger) {
-  burger.addEventListener('click', () => {
-    mobileHeader.classList.toggle('active')
-    document.body.classList.toggle('lock')
+if (btnBurger) {
+  btnBurger.addEventListener('click', () => {
+    mobileHeader.classList.add('active')
+    document.body.classList.add('lock')
+  })
+}
+
+if (btnCloseMenu) {
+  btnCloseMenu.addEventListener('click', () => {
+    mobileHeader.classList.remove('active')
+    document.body.classList.remove('lock')
   })
 }
 
 const btnSortList = document.querySelector('.catalog__btn-list'),
-      btnSortGrid = document.querySelector('.catalog__btn-grid'),
-      catalogList = document.querySelector('.catalog__list'),
-      cards = document.querySelectorAll('.catalog__list-item');
-
-    
+  btnSortGrid = document.querySelector('.catalog__btn-grid'),
+  catalogList = document.querySelector('.catalog__list'),
+  cards = document.querySelectorAll('.catalog__list-item');
 
 
-      btnSortList.addEventListener('click', () => {
-        btnSortGrid.classList.remove('active')
-        btnSortList.classList.add('active')
-        catalogList.classList.remove('grid')
-        cards.forEach((card) => {
-          if (!card.classList.contains('card-list')) {
-            card.classList.add('card-list')
-            card.classList.remove('card-grid')
-          }
-        })
-      })
+if (btnSortList) {
+  btnSortList.addEventListener('click', () => {
+  btnSortGrid.classList.remove('active')
+  btnSortList.classList.add('active')
+  catalogList.classList.remove('grid')
+  cards.forEach((card) => {
+    if (!card.classList.contains('card-list')) {
+      card.classList.add('card-list')
+      card.classList.remove('card-grid')
+    }
+  })
+})
+}
 
-      
-      btnSortGrid.addEventListener('click', () => {
-        btnSortList.classList.remove('active')
-        btnSortGrid.classList.add('active')
-        catalogList.classList.add('grid')
-        cards.forEach((card) => {
-          if (!card.classList.contains('card-grid')) {
-            card.classList.add('card-grid')
-            card.classList.remove('card-list')
-          }
-        })
-      })
+if (btnSortGrid) {
+  btnSortGrid.addEventListener('click', () => {
+  btnSortList.classList.remove('active')
+  btnSortGrid.classList.add('active')
+  catalogList.classList.add('grid')
+  cards.forEach((card) => {
+    if (!card.classList.contains('card-grid')) {
+      card.classList.add('card-grid')
+      card.classList.remove('card-list')
+    }
+  })
+})
+}
+
+
+
+
+
 
 const btnReduce = document.querySelector('.product__btn-reduce'),
   btnIncrease = document.querySelector('.product__btn-increase'),
