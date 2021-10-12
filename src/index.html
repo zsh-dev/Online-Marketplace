@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Маркетплейс - INTERMALL</title>
+    <title>Маркетплейс</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="container">
-           
+
             <div class="header__nav-panel">
                 <button class="burger">
                     <span></span>
@@ -39,7 +39,7 @@
                     </ul>
                 </nav>
                 <button class="header__currency">Валюта $</button>
-                
+
             </div>
             <div class="header__interaction">
                 <div class="header__catalog">
@@ -53,9 +53,9 @@
                         <li class="header__catalog-item"><a href="#" class="header__catalog-link">Телефоны</a></li>
                     </ul>
                 </div>
-                <form class="header__form">
-                    <input type="text" class="header__input" placeholder="Я ищу..." name="search" required>
-                    <button type="button" class="header__form-btn"></button>
+                <form class="search-form header__form">
+                    <input type="text" class="search-form__input" placeholder="Я ищу..." name="search" required>
+                    <button type="button" class="search-form__btn"></button>
                 </form>
                 <div class="header__links">
                     <a href="#" class="header__link header__login">Войти</a>
@@ -65,9 +65,9 @@
 
             <div class="header__mobile-panel">
                 <button class="btn-close">x</button>
-                <form class="header__form">
-                    <input type="text" class="header__input" placeholder="Я ищу..." name="search" required>
-                    <button type="button" class="header__form-btn"></button>
+                <form class="search-form header__form">
+                    <input type="text" class="search-form__input" placeholder="Я ищу..." name="search" required>
+                    <button type="button" class="search-form__btn"></button>
                 </form>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
@@ -83,9 +83,9 @@
                     <a href="#" class="header__address">Москва и Московская обл.</a>
                 </div>
             </div>
-   
+
         </div>
-      
+
     </header>
     <div class="banner page-section">
         <div class="container">
@@ -129,27 +129,28 @@
                 <div class="swiper-container products__slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide card">
+                            <div class="card__content">
                                 <div class="card__img">
                                     <img src="img/headphones.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                           
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card card_discount">
-                          
+                            <div class="card__content">
                                 <div class="card__img">
                                     <img src="img/headphones-2.png" alt="">
                                     <span class="discount">-90%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Беспроводные наушники Remax RB-S26
                                         Black</a></h3>
-                           
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
@@ -157,51 +158,51 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                           
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/atemi.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Шапочка Atemi</a></h3>
-                         
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                         
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/headphones.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                       
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                         
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/headphones-2.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                         
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                   
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/atemi.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                       
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
@@ -260,28 +261,28 @@
                 <div class="swiper-container products__slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide card">
-                          
+                            <div class="card__content">
                                 <div class="card__img">
                                     <img src="img/headphones.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                      
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card card_discount">
-                           
+                            <div class="card__content">
                                 <div class="card__img">
                                     <img src="img/headphones-2.png" alt="">
                                     <span class="discount">-90%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Беспроводные наушники Remax RB-S26
                                         Black</a></h3>
-                     
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
@@ -289,51 +290,51 @@
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                            
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/atemi.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Шапочка Atemi</a></h3>
-                       
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                          
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/headphones.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                          
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                           
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/headphones-2.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                   
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
                             </div>
                         </div>
                         <div class="swiper-slide card">
-                          
+                            <div class="card__content">
                                 <div class="card__img"><img src="img/atemi.png" alt="">
                                     <span class="discount">0%</span>
                                 </div>
                                 <h3 class="card__title"><a href="#" class="link">Портативный медиаплеер Ritmix RB -1010
                                         Grey</a></h3>
-                      
+                            </div>
                             <div class="card__footer">
                                 <button class="btn btn_cart"></button>
                                 <p class="card__price">3400Р</p>
@@ -355,8 +356,9 @@
                 <h2 class="title subscribe__title title_white">Эксклюзивные скидки</h2>
                 <p class="subscribe__text">Подпишитесь на наши новости и <span>получите купон на скидку 10%!</span></p>
                 <form action="#" class="subscribe__form">
-                    <input type="email" class="subscribe__input" placeholder="E-mail" required><button type="submit" class="subscribe__btn">Подписаться</button>
-                    
+                    <input type="email" class="subscribe__input" placeholder="E-mail" required><button type="submit"
+                        class="subscribe__btn">Подписаться</button>
+
                 </form>
                 <div class="subscribe__socials">
                     <a href="#" class="subscribe__social subscribe__social_insta" target="_blank"></a>
@@ -403,7 +405,7 @@
                     <a href="tel:80000000000" class="footer__contact">8 (499) 000-00-00 (звонок бесплатный)</a>
                     <p class="footer__time">Пн-Пт 9.00-18.00</p>
                 </div>
-                
+
             </div>
             <p class="footer__copyright">© 2020 - 2021 ООО «Lorem».</p>
         </div>

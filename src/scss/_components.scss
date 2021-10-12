@@ -66,12 +66,17 @@
 }
 
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
 
     &_discount .discount {
         display: inline-block;
+    }
+
+    &__content {
+        flex-grow: 1;
+        position: relative;
+        margin-bottom: 10px;
     }
 
 
@@ -92,14 +97,13 @@
     }
 
     &__title {
-        flex: 1 0 auto;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
         color: #000000;
         transition: color .5s;
-        margin-bottom: 10px;
+        
         &:hover {
             color: #282A91;
         }
@@ -190,16 +194,21 @@
     .product-status, .card__text,.card__btn,.card__btn-favorite, .card__btn-compare {
         display: none;
     }
+    .card__img:hover ~ .card__descr .card__title {
+        color: #282a91;
+    }
     .card__descr {
         display: flex;
         flex-wrap: wrap;
     }
     .card__title {
         width: 100%;
+        margin-bottom: 10px;
     }
     .card__price {
         order: 1;
     }
+    .link::before{display: none;}
 }
 
 .product-status {

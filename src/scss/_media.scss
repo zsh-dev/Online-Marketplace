@@ -36,10 +36,6 @@
             }
         }
 
-        &__form {
-            width: 550px;
-        }
-
     }
 
 
@@ -118,10 +114,6 @@
                 display: none;
             }
 
-        }
-
-        &__form {
-            width: 350px;
         }
 
         &__login {
@@ -260,21 +252,8 @@
             }
         }
 
-        &__btn {
-            padding-left: 40px;
-
-            &::before {
-                top: 18px;
-                left: 15px;
-            }
-        }
-
-        &__form {
-            width: 220px;
-        }
-
         &__link {
-            padding-left: 27px;
+            padding-left: 25px;
         }
     }
 
@@ -326,10 +305,10 @@
         }
 
         &__btn {
-            padding: 15px;
-
+            padding-left: 35px;
+            padding-right: 15px;
             &::before {
-                display: none;
+                left: 10px;
             }
         }
 
@@ -344,11 +323,12 @@
                 padding: 0 15px;
                 width: 100%;
                 display: block;
+                margin: 0;
                 margin-bottom: 20px;
+            }
 
-                &-btn {
-                    right: 16px;
-                }
+            .search-form__btn {
+                right: 16px;
             }
            
 

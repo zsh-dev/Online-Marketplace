@@ -192,47 +192,15 @@
 
     &__form {
         position: relative;
-        width: 711px;
+        width: 49%;
         height: 55px;
+        margin: 0 45px;
+    }
+    &__links{
+        display: flex;
     }
 
-    &__input {
-        width: 100%;
-        height: 100%;
-        padding-left: 24px;
-        padding-right: 45px;
-        background-color: #FCFCFC;
-        border: 1px solid #CFCFCF;
-        border-radius: 10px;
-
-        &::placeholder {
-            color: #CECECE;
-        }
-    }
-
-    &__form-btn {
-        width: 44px;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        background-color: transparent;
-        border: none;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-image: url(../icons/search.svg);
-            width: 20px;
-            height: 19px;
-            background-repeat: no-repeat;
-        }
-    }
-
+   
     &__link {
         position: relative;
         padding-left: 34px;
@@ -271,6 +239,46 @@
             background-image: url(../icons/cart.svg);
             width: 20px;
             height: 20px;
+        }
+    }
+
+}
+
+.search-form {
+    &__input {
+        width: 100%;
+        height: 100%;
+        padding-left: 24px;
+        padding-right: 45px;
+        background-color: #FCFCFC;
+        border: 1px solid #CFCFCF;
+        border-radius: 10px;
+
+        &::placeholder {
+            color: #CECECE;
+        }
+    }
+
+    &__btn {
+        width: 44px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: transparent;
+        border: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../icons/search.svg);
+            width: 20px;
+            height: 19px;
+            background-repeat: no-repeat;
         }
     }
 
